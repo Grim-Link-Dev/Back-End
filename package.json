@@ -1,0 +1,42 @@
+{
+  "name": "Back-End",
+  "version": "1.0.0",
+  "description": "Grim-Link-Backend",
+  "main": "index.js",
+  "scripts": {
+    "server": "nodemon --require dotenv/config index.js",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Grim-Link-Dev/Back-End.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Grim-Link-Dev/Back-End/issues"
+  },
+  "homepage": "https://github.com/Grim-Link-Dev/Back-End#readme",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "ejs": "^3.1.5",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "fs": "0.0.1-security",
+    "googleapis": "^62.0.0",
+    "helmet": "^4.1.1",
+    "knex": "^0.21.9",
+    "morgan": "^1.10.0",
+    "passport": "^0.4.1",
+    "passport-google-oauth": "^2.0.0",
+    "pg": "^8.4.2",
+    "sqlite3": "^5.0.0"
+  },
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "dot-env": "0.0.1",
+    "dotenv": "^8.2.0",
+    "nodemon": "^2.0.6"
+  }
+}

@@ -104,10 +104,11 @@ server.use(
 );
 
 const welcomeRouter = require("./welcome");
-const shipsRouter = require("./ships/ships-router")
+const shipsRouter = require("./ships/ships-router");
+
 
 server.use("/", welcomeRouter);
-server.use("/ships", shipsRouter)
+server.use("/ships", shipsRouter);
 
 
 module.exports = server;

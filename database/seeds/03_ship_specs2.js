@@ -1,10 +1,37 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('ship_specs2').del()
+  return knex('ship_specs2')
+  .truncate()
     .then(function () {
       // Inserts seed entries
       return knex('ship_specs2').insert([
+        {
+          id: "89",
+          afterburner_speed: "890",
+          beam: "46.5",
+          cargocapacity: "295",
+          height: "23.5",
+          length: "101.0",
+          manufacturer_id: "4",
+          mass: "3517864",
+          max_crew: "6",
+          min_crew: "4",
+          pitch_max: "20.0",
+          production_note: null,
+          production_status: "flight-ready",
+          roll_max: "35.0",
+          scm_speed: "120",
+          size: "large",
+          time_modified: "4 months ago",
+          type: "support",
+          xaxis_acceleration: "9.0",
+          yaw_max: "20.0",
+          yaxis_acceleration: "10.0",
+          zaxis_acceleration: "9.4",
+          description: "The UEE military uses an adapted ‘rough and tumble’ Gemini variant of the Starfarer for their front-line operations, trading some cargo capacity and maneuverability for reinforced armor, increased shielding, more powerful engines and stronger manned turrets. The Gemini also includes an optional missile pod, which can be swapped for the fuel intake unit on either Starfarer variant’s nose. The listed Cargo Capacity is only for the dedicated Cargo Room and does not account for the extra space available from the bulk cargo pods.",
+          url: "/pledge/ships/misc-starfarer/Starfarer-Gemini"
+        },
         {
           id: "24",
           afterburner_speed: "890",
@@ -915,84 +942,7 @@ exports.seed = function(knex) {
           description: "The Aegis Reclaimer is an industrial salvage ship. Equipped with a reinforced cargo bay, a long-range jump drive and launch pods for unmanned drones, the Reclaimer is an ideal ship for taking advantage of deep space wrecks. Tractor beams, floodlights, scanner options and docking ports round out the tools on this capable, utilitarian spacecraft.\n\nThe listed Cargo Capacity is only for the dedicated Cargo Room and does not account for the salvaged material capacity which will be detailed later.",
           url: "/pledge/ships/reclaimer/Reclaimer-Best-In-Show-Edition"
         },
-        {
-          id: "63",
-          afterburner_speed: "0",
-          beam: "198.0",
-          cargocapacity: "5400",
-          height: "72.0",
-          length: "480.0",
-          manufacturer_id: "12",
-          mass: "109860179",
-          max_crew: "80",
-          min_crew: "12",
-          pitch_max: null,
-          production_note: "Currently being built and tested for implementation in-game.",
-          production_status: "in-production",
-          roll_max: null,
-          scm_speed: "0",
-          size: "capital",
-          time_modified: "3 years ago",
-          type: "combat",
-          xaxis_acceleration: null,
-          yaw_max: null,
-          yaxis_acceleration: null,
-          zaxis_acceleration: "0.0",
-          description: "Designed for use by the UEE military, the Javelin is a massive, modular capital ship that can be appropriated for entrepreneurial use. With a detailed interior, plenty of modular room options and a high crew capacity, the Javelin is a ship that has made a name for itself in a variety of roles.",
-          url: "/pledge/ships/aegis-javelin/Javelin"
-        },
-        {
-          id: "75",
-          afterburner_speed: "1115",
-          beam: "40.0",
-          cargocapacity: "0",
-          height: "8.5",
-          length: "38.5",
-          manufacturer_id: "12",
-          mass: "238616",
-          max_crew: "2",
-          min_crew: "2",
-          pitch_max: "80.0",
-          production_note: null,
-          production_status: "flight-ready",
-          roll_max: "120.0",
-          scm_speed: "225",
-          size: "medium",
-          time_modified: "3 months ago",
-          type: "combat",
-          xaxis_acceleration: "51.9",
-          yaw_max: "80.0",
-          yaxis_acceleration: "54.5",
-          zaxis_acceleration: "53.3",
-          description: "A hard-charging bulldog of a fighter which features extensive forward-mounted weaponry designed to tear through the shields and armor of other spacecraft. So-named because their multiple-jump range allows them to form the vanguard of any military expedition, Vanguards have seen extensive service against the Vanduul.",
-          url: "/pledge/ships/vanguard/Vanguard-Warden"
-        },
-        {
-          id: "95",
-          afterburner_speed: "0",
-          beam: "40.0",
-          cargocapacity: "0",
-          height: "8.0",
-          length: "38.5",
-          manufacturer_id: "12",
-          mass: "240092",
-          max_crew: "2",
-          min_crew: "2",
-          pitch_max: null,
-          production_note: null,
-          production_status: "flight-ready",
-          roll_max: null,
-          scm_speed: "225",
-          size: "medium",
-          time_modified: "3 months ago",
-          type: "combat",
-          xaxis_acceleration: null,
-          yaw_max: null,
-          yaxis_acceleration: null,
-          zaxis_acceleration: null,
-          description: "The Vanguard Harbinger is Earth’s standard fighter-bomber, converting the standard Warden model’s escape pod into a potent bomb bay. The extended range of the Vanguard and the relatively small profile mean that it can go where carrier-based planes or larger strategic bombers don’t… and then strike hard and make it back to frontier bases. The Vanguard Harbinger is a powerful bomber that can operate out of the roughest forward operating bases.\n",
-          url: "/pledge/ships/vanguard/Vanguard-Harbinger"
-        },
+        
       ]);
     });
 };

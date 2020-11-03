@@ -1,10 +1,89 @@
 
 exports.seed = function(knex) {
   // Deletes ALL existing entries
-  return knex('ship_specs4').del()
+  return knex('ship_specs4')
+  .truncate()
     .then(function () {
       // Inserts seed entries
       return knex('ship_specs4').insert([
+        {
+          id: "135",
+          afterburner_speed: "0",
+          beam: "4.0",
+          cargocapacity: "0",
+          height: "2.5",
+          length: "6.0",
+          manufacturer_id: "83",
+          mass: "3022",
+          max_crew: "3",
+          min_crew: "1",
+          pitch_max: null,
+          production_note: null,
+          production_status: "flight-ready",
+          roll_max: null,
+          scm_speed: "0",
+          size: "vehicle",
+          time_modified: "1 year ago",
+          type: "ground",
+          xaxis_acceleration: null,
+          yaw_max: null,
+          yaxis_acceleration: null,
+          zaxis_acceleration: null,
+          description: "Designed for militia and security use, the Cyclone TR module features upgraded armor and a single Human-operated turret capable of mounting a Size 1 weapon and a responsive 360° field of fire.",
+          url: "/pledge/ships/cyclone/Cyclone-TR"
+        },
+        {
+          id: "136",
+          afterburner_speed: "0",
+          beam: "4.0",
+          cargocapacity: "0",
+          height: "2.5",
+          length: "6.0",
+          manufacturer_id: "83",
+          mass: "3022",
+          max_crew: "2",
+          min_crew: "1",
+          pitch_max: null,
+          production_note: null,
+          production_status: "flight-ready",
+          roll_max: null,
+          scm_speed: "0",
+          size: "vehicle",
+          time_modified: "1 year ago",
+          type: "ground",
+          xaxis_acceleration: null,
+          yaw_max: null,
+          yaxis_acceleration: null,
+          zaxis_acceleration: null,
+          description: "For those who like to push the limits of speed, the Cyclone RC features a modified intake system to allow for controlled bursts of speed as well as tools to customize handling.",
+          url: "/pledge/ships/cyclone/Cyclone-RC"
+        },
+        {
+          id: "137",
+          afterburner_speed: "0",
+          beam: "4.0",
+          cargocapacity: "0",
+          height: "3.0",
+          length: "6.0",
+          manufacturer_id: "83",
+          mass: "3022",
+          max_crew: "2",
+          min_crew: "1",
+          pitch_max: null,
+          production_note: null,
+          production_status: "flight-ready",
+          roll_max: null,
+          scm_speed: "0",
+          size: "vehicle",
+          time_modified: "1 year ago",
+          type: "ground",
+          xaxis_acceleration: null,
+          yaw_max: null,
+          yaxis_acceleration: null,
+          zaxis_acceleration: null,
+          description: "Stay mobile and aware with the Cyclone RN. This light reconnaissance vehicle is the perfect solution for scouting runs, providing fast and detailed scans of terrain as well as beacon placement.",
+          url: "/pledge/ships/cyclone/Cyclone-RN"
+        },
         {
           id: "138",
           afterburner_speed: "0",
@@ -915,32 +994,7 @@ exports.seed = function(knex) {
           description: "With a powerful frame, proprietary X-TEC adaptive tread tires, and Reactive Response precision steering and braking, the Tumbril Ranger lets you embrace the renegade spirit of the open road while staying thoroughly grounded. Born to tame the wild frontier, the Ranger CV takes adventure touring to the next level and delivers the goods with an auxiliary fuel tank and custom 0.375 SCU pannier. ",
           url: "/pledge/ships/tumbril-ranger/Ranger-CV"
         },
-        {
-          id: "183",
-          afterburner_speed: null,
-          beam: "7.0",
-          cargocapacity: "0",
-          height: "5.5",
-          length: "17.0",
-          manufacturer_id: "3",
-          mass: null,
-          max_crew: "2",
-          min_crew: "1",
-          pitch_max: null,
-          production_note: null,
-          production_status: "flight-ready",
-          roll_max: null,
-          scm_speed: "33",
-          size: "vehicle",
-          time_modified: "3 months ago",
-          type: "combat",
-          xaxis_acceleration: null,
-          yaw_max: null,
-          yaxis_acceleration: null,
-          zaxis_acceleration: null,
-          description: null,
-          url: "/pledge/ships/anvil-ballista/Anvil-Ballista"
-        },
+        
       ]);
     });
 };
